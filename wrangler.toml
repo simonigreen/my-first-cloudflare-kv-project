@@ -1,0 +1,14 @@
+name = "my-kv-project"
+main = "src/index.js"
+compatibility_date = "2022-05-21"
+
+kv_namespaces = [
+  { binding = "MY_FIRST_KV", id = "183922704e544828b169728227de5399", preview_id = "4256b919950c4f15be2a676377994d9b" }
+]
+
+[env.production]
+workers_dev = false
+kv_namespaces = [
+  { binding = "MY_FIRST_KV", id = "183922704e544828b169728227de5399" }
+]
+route = "https://my-first-cloudflare-kv-project.simongreen.dev/"
